@@ -1,0 +1,18 @@
+{
+  "players": [
+      {
+          "id": "1",
+          "lolname": "Cloud Turtle",
+          "discordtag": "cloudturtle#3456",
+          "team": "Kilter Skilter"
+      },
+      {
+          "id": "2",
+          "lolname": "Jezune",
+          "discordtag": "jezune#5678",
+          "team":"Kilter Skilter"
+      }
+  ]
+
+
+}
