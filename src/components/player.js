@@ -1,4 +1,4 @@
-const player = ({ player }) => {
+const Player = ({ player }) => {
     return (
         <li>
             {player.lolname}
@@ -7,4 +7,4 @@ const player = ({ player }) => {
     )
 }
 
-export default player
+export default Player

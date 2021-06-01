@@ -7,7 +7,6 @@ import ScheduleForm from './scheduleform'
 const Schedule = () => {
 
     const [formOpen, setFormOpen] = useState(false)
-    const [players, getPlayers] = useState([])
 
 
     const closeForm = () => setFormOpen(false)

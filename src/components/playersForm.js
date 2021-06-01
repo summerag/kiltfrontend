@@ -1,16 +1,13 @@
 import './playersForm.css'
 
-const PlayerForm = ({ onClick }) => {
-    const addPlayer = (event) => {
-        event.preventDefault()
+const PlayerForm = ({ onClick, onSubmit }) => {
 
-    }
 
     return (
         <div className="form-container" >
             <button className="close"onClick={onClick} >x</button>
             <h1>Nice</h1>
-            <form onSubmit={addPlayer}>
+            <form onSubmit={onSubmit}>
                 <div>
                     <label htmlFor="lolname"> Player name (LoL name): </label>
                     <input type="text" name="lolname"  />
