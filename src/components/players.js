@@ -6,7 +6,11 @@ import Player from './player'
 const Players = () => {
     const [formOpen, setFormOpen] = useState(false)
     const [players, setPlayers] = useState([])
-    const [newPlayer, setNewPlayer] = useState()
+    const [newPlayer, setNewPlayer] = useState({
+        lolname: "",
+        discordtag: "",
+        team:""
+    })
 
 
     useEffect(() => {
@@ -18,13 +22,23 @@ const Players = () => {
 
     const addPlayer = (event) => {
         event.preventDefault()
-
-        console.log(event.target)
-        //const playerObject = {
-       //     id: players.length + 1,
-//
-       // }
-        
+        playerService.create(newPlayer)
+        .then(response => {
+            setFormOpen(false)
+            setPlayers(players.concat(response))
+            setNewPlayer({
+                lolname: "",
+                discordtag: "",
+                team:""
+            })
+        })
+    }
+    const trackChange = (event) => {
+        const {name, value} = event.target;
+        setNewPlayer(prevState => ({
+            ...prevState,
+            [name]: value
+        }))
     }
 
     return (
@@ -35,6 +49,7 @@ const Players = () => {
                 <PlayerForm 
                     onClick={closeForm} 
                     onSubmit={addPlayer} 
+                    onChange={trackChange}
                 />
             }
             {
@@ -44,7 +59,6 @@ const Players = () => {
                         player={player}
                     
                     />
-                    
                 )
             }
         </div>

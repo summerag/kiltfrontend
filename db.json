@@ -1,18 +1,34 @@
 {
   "players": [
-      {
-          "id": "1",
-          "lolname": "Cloud Turtle",
-          "discordtag": "cloudturtle#3456",
-          "team": "Kilter Skilter"
-      },
-      {
-          "id": "2",
-          "lolname": "Jezune",
-          "discordtag": "jezune#5678",
-          "team":"Kilter Skilter"
-      }
+    {
+      "id": "1",
+      "lolname": "Cloud Turtle",
+      "discordtag": "cloudturtle#3456",
+      "team": "Kilter Skilter"
+    },
+    {
+      "id": "2",
+      "lolname": "Jezune",
+      "discordtag": "jezune#5678",
+      "team": "Kilter Skilter"
+    },
+    {
+      "lolname": "ss",
+      "discordtag": "ss",
+      "team": "aa",
+      "id": "EN7ggiH"
+    },
+    {
+      "lolname": "Papa Nick",
+      "discordtag": "papanick#4567",
+      "team": "Kilter Skilter",
+      "id": "iHTkrBL"
+    },
+    {
+      "lolname": "gelo",
+      "discordtag": "fsdf",
+      "team": "aa",
+      "id": "BI_cJnl"
+    }
   ]
-
-
 }

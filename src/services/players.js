@@ -9,13 +9,12 @@ const getAll = () => {
 const create = async newObject => {
     const response = await fetch(baseUrl, {
         method: 'POST',
-        cache: 'no-cache',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(newObject)
     });
-    return response.json();
+    return response.json()
 }
 
 const services = { getAll, create };
