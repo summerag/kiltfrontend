@@ -1,0 +1,39 @@
+section {
+    margin: 0px;
+    width: 100%;
+    padding-top: 5%;
+}
+h1 {
+    width: 50%;
+    margin: auto;
+    font-size: 48px;
+    text-align: center;
+
+}
+
+.homeBackground {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    min-height: 480px;
+    height: 80vh;
+    max-height: 560px;
+    box-sizing: border-box;
+    padding: 48px 48px 32px;
+    overflow: hidden;
+    transform: skewY(8deg);
+    transform-origin: 100%;
+    background-color: #AA4C4C;
+    z-index: -1;
+}
+.intro {
+    color: white;
+}
+img {
+    display: block;
+    margin: 15px auto auto auto;
+}
+

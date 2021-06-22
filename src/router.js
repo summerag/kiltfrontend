@@ -1,7 +1,8 @@
 import {Switch, Route} from 'react-router-dom'
-import Players from './components/players'
-import Teams from './components/teams'
-import Schedule from './components/schedule'
+import Players from './components/players/players'
+import Teams from './components/teams/teams'
+import Schedule from './components/schedule/schedule'
+import Home from './components/home/home'
 
 const router = () => {
     return(
@@ -14,6 +15,9 @@ const router = () => {
         </Route>
         <Route path='/schedule'>
             <Schedule />
+        </Route>
+        <Route path='/'>
+          <Home />
         </Route>
       </Switch>
     )
