@@ -1,4 +1,4 @@
-import './playersForm.css'
+import './playersForm.scss'
 
 const PlayerForm = ({ onClick, onSubmit, onChange }) => {
 

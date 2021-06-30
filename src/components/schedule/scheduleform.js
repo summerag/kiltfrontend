@@ -1,4 +1,4 @@
-import './scheduleform.css'
+import './scheduleform.scss'
 
 const ScheduleForm = ({ onClick }) => {
     return(

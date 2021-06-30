@@ -20,7 +20,7 @@ const Nav = () =>{
                     <img src={logo} alt=''></img>
                 </Link>
             </div>
-            <Hamburger className="menu" onClick={handleMenuState}/>
+            <Hamburger className="menu" onClick={handleMenuState} status={dropMenu}/>
             <div className={`${dropMenu ? 'activeDrop' : 'nav-links'}`} onClick={() => {
                 setDropMenu(false)
                 console.log(dropMenu)

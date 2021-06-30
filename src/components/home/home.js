@@ -3,7 +3,7 @@ import lblcs from '../../assets/lblcs.png'
 import disc from '../../assets/nice.png'
 const home = () => {
     return (
-        <div>
+        <div className="logoimage">
             <div className="homeBackground">
             </div>
             <section className="intro">
